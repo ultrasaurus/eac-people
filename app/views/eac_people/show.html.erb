@@ -1,0 +1,15 @@
+<p><%= link_to "Back to the list of people", eac_people_path %></p>
+
+<h1><%#= @person.emu_person.full_name %></h1>
+
+<p>
+EAC record ID: <strong><%= @eac_person.archival_record_identifier %></strong>
+</p>
+<strong>Also known as:</strong>
+<ul>
+  <% @eac_person.names.each do |name| %>
+    <li><%= name.text %></li>
+  <% end %>
+</ul>
+
+<%== @eac_person.biography %>

@@ -1,0 +1,8 @@
+<h1>People</h1>
+
+<ul>
+  <% @eac_people.each do |person| %>
+  <li><%= link_to person.archival_record_identifier, person-%>: <%= person.names[0].text %></li>
+
+  <% end %>
+</ul>
