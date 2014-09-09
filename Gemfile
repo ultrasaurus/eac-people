@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem "eac"
+gem "sparql-client"
+
 gem "jquery-rails"
 gem "pg"
 gem "rails", "4.0.2"
